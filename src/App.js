@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+const petsList = require('./pets.json');
+
 import './App.css';
+import { useState } from 'react'
+import Pets from './Pets'
 
 function App() {
+  const [  count, setCount ] = useState(0);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1>My name is Daniel</h1>
+     <h2>{count}</h2>
+     <button onClick={() => setCount((count) => count+1)}>Press Me</button>
+     <button onClick={() => setCount(0)}>Reset</button>
+     <Pets />
     </div>
   );
 }
