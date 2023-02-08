@@ -10,7 +10,7 @@ function Pets() {
     setData(petsList);
   }, [])
     
-  console.log({data})
+  console.log('data', data)
   return (
     <div className="App">
       <h1 className="pets-title">Them my pets ya'll</h1>

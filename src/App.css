@@ -1,6 +1,3 @@
-.pets {
-}
-
 .pets-flex {
     display: flex;
     flex-direction: row;
@@ -14,8 +11,21 @@
 }
 
 .pets-card {
-    width: 100px;
-    height: 300px;
+    width: 250x;
+    height: 450px;
     background: black;
     color: white;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.pets-image {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.pets-info {
+    text-align: center;
 }
