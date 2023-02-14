@@ -1,9 +1,7 @@
-import "./App.css";
+import "../App.css";
 
 const PetItems = ({ pet, removePet }) => {
   const { name, species, favFoods, birthYear, photo } = pet;
-
-  //   const deleteThings = (name) => removePet(name);
 
   return (
     <div className="pets">

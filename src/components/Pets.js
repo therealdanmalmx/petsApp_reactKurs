@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import "./App.css";
+import "../App.css";
 import PetItems from "./PetItems";
-const petsList = require("./pets.json");
+const petsList = require("../pets.json");
 
 function Pets() {
   const [data, setData] = useState([]);
