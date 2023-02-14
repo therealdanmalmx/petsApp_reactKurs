@@ -8,7 +8,7 @@ function Pets() {
 
   useEffect(() => {
     setData(petsList);
-  }, [data]);
+  }, []);
 
   const removePet = (name) => {
     let newList = data.pets.filter((pet) => pet.name !== name);
